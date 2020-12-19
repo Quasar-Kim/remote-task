@@ -1,0 +1,10 @@
+{
+  "extends": "standard-with-typescript",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "@typescript-eslint/promise-function-async": 0,
+    "@typescript-eslint/no-floating-promises": 0
+  }
+}
