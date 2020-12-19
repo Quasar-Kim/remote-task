@@ -22,7 +22,7 @@ export default class TaskClient {
 
       const resolveResponse = (e: MessageEvent): void => {
         const response: TaskResponse = e.data
-        if (request.id !== response.id) return
+        if (request.id !== response.id || request.sender !== 'remote-task') return
 
         this.msgChannel.removeEventListener('message', resolveResponse)
 

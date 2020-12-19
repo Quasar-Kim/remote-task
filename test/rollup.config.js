@@ -11,5 +11,5 @@ export default {
     dir: 'test/build',
     format: 'esm',
     sourcemap: true
-  },
+  }
 }

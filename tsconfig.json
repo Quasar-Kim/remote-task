@@ -3,6 +3,9 @@
     "strictNullChecks": true,
     "target": "ES2018",
     "sourceMap": true,
-    "moduleResolution": "node"
-  }
+    "moduleResolution": "node",
+    "outDir": "build"
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "build"]
 }
