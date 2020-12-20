@@ -12,7 +12,9 @@ The following example demonstrates calling funtion inside web worker in main thr
 // main thread
 import { TaskClient } from '@quasar-kim/remote-task'
 
-const worker = new Worker('/path/to/worker')
+const worker = new Worker('/path/to/worker', {
+  type: 'module' // enable es module inside worker
+})
 const client = new TaskClient(worker)
 
 const result = await client.run('sum', 1, 2)

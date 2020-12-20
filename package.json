@@ -1,10 +1,13 @@
 {
   "name": "@quasar-kim/remote-task",
   "version": "0.1.0",
-  "description": "Shorthand",
+  "description": "Use functions in remote environment easily",
   "module": "build/index.js",
   "types": "build/index.d.ts",
   "type": "module",
+  "files": [
+    
+  ],
   "scripts": {
     "build": "rimraf build && rollup -c",
     "build:test": "rollup --watch --config test/rollup.config.js",
@@ -14,6 +17,7 @@
     "test:integration:watch": "concurrently npm:build:test npm:wtr:watch --raw",
     "prepare": "eslint src/**/*.ts && npm run build && ava && web-test-runner"
   },
+  "repository": "github:Quasar-Kim/remote-task",
   "keywords": [],
   "author": "Quasar Kim",
   "license": "ISC",
