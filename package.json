@@ -2,6 +2,7 @@
   "name": "@quasar-kim/remote-task",
   "version": "0.1.2",
   "description": "Use functions in remote environment easily",
+  "main": "build/index.js",
   "module": "build/index.js",
   "types": "build/index.d.ts",
   "type": "module",
